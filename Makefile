@@ -4,7 +4,7 @@ CFLAGS= -Wall
 
 CFILES = *.cpp
 OBJ= *.o
-TARGET= Tester
+TARGET= Source
 
 all:	exec
 

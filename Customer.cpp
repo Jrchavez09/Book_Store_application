@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <cstdbool>
 
@@ -9,6 +10,14 @@ using namespace std;
 
 ostream& operator<<(ostream& os,  const Customer& obj)
 {
+	os << fixed << showpoint << setprecision(2);
+	os << setw(13) << left << "Name: "
+	   << setw(37) << right << obj.name << endl;
+	os << setw(13) << left << "Address: "
+	   << setw(37) << right << obj.address << endl;
+	os << setw(13) << left << "Email: "
+	   << setw(37) << right << obj.email << endl;
+
 	return (os);
 }
 
@@ -74,7 +83,8 @@ Customer::getEmail()
 
 double
 Customer::checkoutOrders()
-{ 
+{
+	
 	return (0.0); 
 }
 
